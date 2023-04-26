@@ -1,7 +1,38 @@
-/* #main-carousel {
-    background-image: url('/images/carousal-bg.png');
-} */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
+.suite-btn::before {
+    position: absolute;
+    content: '';
+    width: 96%;
+    height: 100%;
+    border-bottom-right-radius: 60px;
+    background: #8D4AFF;
+    bottom: 0;
+    border-radius: 9999px;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+.suite-btn:hover::before {
+    bottom: -10px;
+}
+
+.section-creator {
+    background-size: 100% !important;
+}
 
 .header-wrapper {
     z-index: 9999;
@@ -253,36 +284,36 @@
 
 .creators-group-gallery-first .creators-group:nth-child(1), .creators-group-gallery-first .creators-group:nth-child(1) figure {
     max-width: 200px;
-    max-height: 321px;
+    height: 321px;
 }
 
 .creators-group-gallery-first .creators-group:nth-child(2),
 .creators-group-gallery-first .creators-group:nth-child(2) figure {
     max-width: 160px;
-    max-height: 254px;
+    height: 254px;
 }
 
 .creators-group-gallery-first .creators-group:nth-child(3),
 .creators-group-gallery-first .creators-group:nth-child(3) figure {
     max-width: 200px;
-    max-height: 321px;
+    height: 321px;
 }
 
 .creators-group-gallery-second .creators-group:nth-child(1), .creators-group-gallery-second .creators-group:nth-child(1) figure {
     max-width: 186px;
-    max-height: 296px;
+    height: 296px;
 }
 
 .creators-group-gallery-second .creators-group:nth-child(2),
 .creators-group-gallery-second .creators-group:nth-child(2) figure {
     max-width: 162px;
-    max-height: 259px;
+    height: 259px;
 }
 
 .creators-group-gallery-second .creators-group:nth-child(3),
 .creators-group-gallery-second .creators-group:nth-child(3) figure {
     max-width: 146px;
-    max-height: 234px;
+    height: 234px;
 }
 
 .creators-group-gallery-first .creators-group:nth-child(1),

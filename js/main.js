@@ -103,6 +103,7 @@ tailwind.config = {
       },
       letterSpacing: {
         tight: "-0.02em",
+        high: "-0.04em",
       },
       lineHeight: {
         tiny: "1.09091",
@@ -152,6 +153,8 @@ tailwind.config = {
           "10.5544px 7.91577px 14.5122px 5.27718px rgba(0, 0, 0, 0.05), 0px 31px 44px 1px rgba(0, 0, 0, 0.6)",
         "dropdown-shadow":
           "0px 13.85px 13.15px -12px rgba(83, 30, 0, 0.05), 0px 0px 0px 1px rgba(0, 0, 0, 0.1);",
+        "2xxl":
+          "6.83739px 5.12804px 9.40141px 3.41869px rgba(0, 0, 0, 0.05), 0px 38px 39.315px -13px rgba(0, 0, 0, 0.2)",
       },
     },
   },

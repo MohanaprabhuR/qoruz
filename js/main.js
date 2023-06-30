@@ -231,7 +231,7 @@ function thumbCarousal() {
   const mainCarouselWrap = document.getElementById("main-carousel");
   const mainCarouselView = mainCarouselWrap.querySelector(".embla__viewport");
   const slides = mainCarouselView.querySelectorAll(".embla__slide");
-  let delay = 3000;
+  let delay = 5000;
   const mainCarousel = EmblaCarousel(
     mainCarouselView,
     {
@@ -275,7 +275,6 @@ function thumbCarousal() {
   );
 
   const onThumbClick = (mainCarousel, thumbCarousel, index) => () => {
-    if (!thumbCarousel.clickAllowed()) return;
     mainCarousel.scrollTo(index);
   };
 

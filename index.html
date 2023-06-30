@@ -90,10 +90,18 @@
          </div>
       </header>
       <main class="wrapper">
-         <section
-            class="hero-section xl:pt-64 xl:pb-56 bg-hero-pattern pt-40 pb-32"
-            >
-            <div class="xl:max-w-6xl mx-auto xl:px-4 max-w-full px-8">
+         <section class="hero-section xl:pt-64 xl:pb-56 bg-hero-pattern pt-40 sm:pb-32 pb-96  relative overflow-hidden">
+            <div class="hero-video absolute w-full h-full top-0 hidden sm:block">
+               <video class="hero-desktop w-full h-full object-cover" loop="" autoplay="" muted="" poster="https://res.cloudinary.com/drudxodfk/video/upload/q_auto/f_jpg/so_auto/v1684482653/Qoruz/Videos/home-banner_iuxffb?_a=ATAPpAA0">
+                  <source src="https://res.cloudinary.com/drudxodfk/video/upload/v1684482653/Qoruz/Videos/home-banner_iuxffb.webm?_a=ATAPpAA0" type="video/webm">
+                  <source src="https://res.cloudinary.com/drudxodfk/video/upload/v1684482653/Qoruz/Videos/home-banner_iuxffb.mp4?_a=ATAPpAA0" type="video/mp4">
+                  <source src="https://res.cloudinary.com/drudxodfk/video/upload/v1684482653/Qoruz/Videos/home-banner_iuxffb.ogv?_a=ATAPpAA0" type="video/ogg">
+               </video>
+            </div>
+            <figure class="block sm:hidden absolute h-100">
+               <img src="./images/home-mobile-banner.png" alt="Home Banner">
+            </figure>
+            <div class="xl:max-w-6xl mx-auto xl:px-4 max-w-full px-8 z-10 relative">
                <div class="xl:max-w-xl sm:max-w-lg">
                   <h1
                      class="xl:text-5xl font-articulat font-extrabold text-orange-400 leading-tiny tracking-tight  text-3xl"
@@ -123,7 +131,7 @@
                               class="xl:min-w-xss bg-white selectDropdown absolute top-full w-full overflow-hidden z-10 transition duration-300 ease-in invisible shadow-dropdown-shadow px-6 py-2.5 rounded-2xl"
                               >
                               <div
-                                 class="option cursor-pointer font-elza font-medium text-base leading-relaxed text-gray-200 hover:text-orange-400 transition duration-300 ease-in mb-4 flex items-center group"
+                                 class="option cursor-pointer font-elza font-medium text-base leading-relaxed text-gray-200 hover:text-orange-400 transition duration-300 ease-in mb-4 flex items-center group hover:bg-orange-300 rounded p-1"
                                  data-type="firstOption"
                                  >
                                  <figure class="mr-small">
@@ -161,7 +169,7 @@
                                  <span class="hidden md:block">Instagram</span>
                               </div>
                               <div
-                                 class="option cursor-pointer font-elza font-medium text-base leading-relaxed text-gray-200 hover:text-orange-400 transition duration-300 ease-in mb-4 flex items-center group"
+                                 class="option cursor-pointer font-elza font-medium text-base leading-relaxed text-gray-200 hover:text-orange-400 transition duration-300 ease-in mb-4 flex items-center group hover:bg-orange-300 rounded p-1"
                                  data-type="secondOption"
                                  >
                                  <figure class="mr-small">
@@ -194,7 +202,7 @@
                                  <span class="hidden md:block">Twitter</span>
                               </div>
                               <div
-                                 class="group option cursor-pointer font-elza font-medium text-base leading-relaxed text-gray-200 hover:text-orange-400 transition duration-300 ease-in mb-4 flex items-center"
+                                 class="group option cursor-pointer font-elza font-medium text-base leading-relaxed text-gray-200 hover:text-orange-400 transition duration-300 ease-in mb-4 flex items-center hover:bg-orange-300 rounded p-1"
                                  data-type="thirdOption"
                                  >
                                  <figure class="mr-small">
@@ -227,7 +235,7 @@
                                  <span class="hidden md:block">Facebook</span>
                               </div>
                               <div
-                                 class="group option cursor-pointer font-elza font-medium text-base leading-relaxed text-gray-200 hover:text-orange-400 transition duration-300 ease-in mb-4 flex items-center"
+                                 class="group option cursor-pointer font-elza font-medium text-base leading-relaxed text-gray-200 hover:text-orange-400 transition duration-300 ease-in mb-4 flex items-center hover:bg-orange-300 rounded p-1"
                                  data-type="fourOption"
                                  >
                                  <figure class="mr-small">
@@ -262,13 +270,24 @@
                            </div>
                         </div>
                         <div
-                           class="search_field pl-5 flex items-center justify-between w-full"
+                           class="search_field pl-3 xl:pl-4 flex items-center justify-between w-full ms-header items-center"
                            >
-                           <input
+                           <!-- <input
                               type="text"
                               class="input outline-none text-gray-500 font-normal font-elza tracking-tight leading-normal text-lg w-full bg-search-icon bg-no-repeat bg-right bg-contain h-11 pr-12"
                               placeholder="Search"
-                              />
+                              /> -->
+                              <div class="ms-header__title bg-search-icon bg-no-repeat bg-right bg-contain w-full flex">
+                                 <h6 class="flex font-elza font-regular text-base md:text-lg  leading-normal tracking-tight text-gray-500 ">Search creators <span class="hidden md:block">from your</span> </h6>
+                                 <div class="ms-slider">
+                                   <ul class="ms-slider__words">
+                                     <li class="ms-slider__word font-elza font-semibold text-black text-base md:text-lg leading-normal tracking-tight block text-left">budget</li>
+                                     <li class="ms-slider__word font-elza font-semibold text-black text-base md:text-lg leading-normal tracking-tight block text-left">category</li>
+                                     <li class="ms-slider__word font-elza font-semibold text-black text-base md:text-lg leading-normal tracking-tight block text-left">powerful</li>
+                                     <li class="ms-slider__word font-elza font-semibold text-black text-base md:text-lg leading-normal tracking-tight block text-left">simple</li>
+                                   </ul>
+                                 </div>
+                              </div>
                         </div>
                      </div>
                   </div>
@@ -344,10 +363,8 @@
                </div>
             </div>
          </section>
-         <section
-            class="section-creator bg-carousal-pattern bg-no-repeat bg-center bg-cover xl:pb-16 pb-9 relative" 
-            >
-            <figure class="absolute right-0 top-[65%] -translate-y-1/2 min-w-[50%]">
+         <section class="section-creator bg-carousal-pattern bg-no-repeat bg-center bg-cover xl:pb-16 pb-9 relative">
+            <figure class="absolute right-0 top-[68%] -translate-y-1/2 min-w-[53%]">
                <img src="./images/carousal-bg.png" alt="Carousal Bg" class="w-full">
             </figure>
             <div class="xl:max-w-6xxl mx-auto xl:px-4 px-6 max-w-full creator-container">
@@ -411,7 +428,7 @@
                            >
                            <img src="./images/svg/user.svg" alt="User" class="h-full" />
                         </figure>
-                        <div class="xl:pl-4 xl:pt-0 pt-4">
+                        <div class="lg:pl-4 lg:pt-0 pt-4">
                            <h1
                               class="xl:text-5xl font-elza font-extrabold text-black leading-none tracking-tight  text-xl"
                               >
@@ -430,7 +447,7 @@
                            >
                            <img src="./images/svg/campaigns.svg" alt="User" class="h-full" />
                         </figure>
-                        <div class="xl:pl-4 xl:pt-0 pt-4">
+                        <div class="lg:pl-4 lg:pt-0 pt-4">
                            <h1
                               class="xl:text-5xl font-elza font-extrabold text-black leading-none tracking-tight  text-xl"
                               >
@@ -449,7 +466,7 @@
                            >
                            <img src="./images/svg/budget.svg" alt="User" class="h-full" />
                         </figure>
-                        <div class="xl:pl-4 xl:pt-0 pt-4">
+                        <div class="lg:pl-4 lg:pt-0 pt-4">
                            <h1
                               class="xl:text-5xl font-elza font-extrabold text-black leading-none tracking-tight  text-xl"
                               >
@@ -646,14 +663,14 @@
                                           >
                                     </div>
                                  </div>
-                                 <figure class="max-w-md mx-auto">
+                                 <figure class="max-w-md mx-auto slider-img ">
                                     <img
                                        class="embla__slide__img"
-                                       src="./images/slider-image.png"
+                                       src="./images/technology-export.png"
                                        />
                                  </figure>
                                  <div
-                                    class="bg-black w-36 lg:h-40 h-28 rounded-2xl shadow-6xl absolute xl:left-48 bottom-0 card-wrapper-left left-12"
+                                    class="bg-black w-40 lg:h-40 h-28 rounded-2xl shadow-6xl absolute xl:left-48 bottom-0 card-wrapper-left left-12"
                                     >
                                     <figure
                                        class="w-7 h-7 rounded-full overflow-hidden -left-3 top-2.5 absolute shadow-9xl"
@@ -666,7 +683,7 @@
                                     <h4
                                        class="font-articulat font-semibold text-base leading-tight tracking-tight text-purple-400 lg:py-2.5 lg:px-6 py-1.5 px-5"
                                        >
-                                       Intutive global filters
+                                       Advanced search engine
                                     </h4>
                                     <div
                                        class="bg-purple-850 lg:py-3.5 lg:px-6 rounded-b-2xl overflow-hidden py-2 px-3"
@@ -674,11 +691,11 @@
                                        <h2
                                           class="font-elza font-bold lg:text-4xl text-lg leading-none tracking-tight text-white"
                                           >
-                                          14
+                                          375k+
                                        </h2>
                                        <span
                                           class="font-elza font-medium text-sm leading-none tracking-tight text-gray-100"
-                                          >Qualitative Filter options</span
+                                          >Searchable profiles</span
                                           >
                                     </div>
                                  </div>
@@ -703,7 +720,7 @@
                            <div class="embla__slide min-w-full relative creator-profile">
                               <div class="relative md:max-w-2xl mx-auto lg:max-w-full">
                                  <div
-                                    class="bg-black w-36 lg:h-40 h-28 rounded-2xl shadow-6xl absolute xl:left-32 xl:top-24 card-wrapper-right left-6 md:top-16 top:8"
+                                    class="bg-black w-40 lg:h-40 h-28 rounded-2xl shadow-6xl absolute xl:left-32 xl:top-24 card-wrapper-right left-6 md:top-16 top:8"
                                     >
                                     <figure
                                        class="w-7 h-7 rounded-full overflow-hidden -left-3 top-2.5 absolute shadow-9xl"
@@ -732,14 +749,14 @@
                                           >
                                     </div>
                                  </div>
-                                 <figure class="max-w-md mx-auto">
+                                 <figure class="max-w-md mx-auto slider-img ">
                                     <img
                                        class="embla__slide__img"
-                                       src="./images/slider-image.png"
+                                       src="./images/sumukhi-suresh.png"
                                        />
                                  </figure>
                                  <div
-                                    class="bg-black w-36 lg:h-40 h-28 rounded-2xl shadow-6xl absolute xl:right-32 bottom-4 card-wrapper-left right-6"
+                                    class="bg-black w-40 lg:h-40 h-28 rounded-2xl shadow-6xl absolute xl:right-32 bottom-4 card-wrapper-left right-6"
                                     >
                                     <figure
                                        class="w-7 h-7 rounded-full overflow-hidden -left-3 top-2.5 absolute shadow-9xl"
@@ -791,7 +808,7 @@
                               >
                               <div class="relative md:max-w-2xl mx-auto lg:max-w-full">
                                  <div
-                                    class="bg-black w-36 lg:h-40 h-28 rounded-2xl shadow-6xl absolute xl:right-48 xl:top-0 card-wrapper-right right-12"
+                                    class="bg-black w-40 lg:h-40 h-28 rounded-2xl shadow-6xl absolute xl:right-48 xl:top-0 card-wrapper-right right-12"
                                     >
                                     <figure
                                        class="w-7 h-7 rounded-full overflow-hidden -left-3 top-2.5 absolute shadow-9xl"
@@ -820,14 +837,14 @@
                                           >
                                     </div>
                                  </div>
-                                 <figure class="max-w-md mx-auto">
+                                 <figure class="max-w-md mx-auto slider-img ">
                                     <img
                                        class="embla__slide__img"
-                                       src="./images/slider-image.png"
+                                       src="./images/lunch-box-campagin.png"
                                        />
                                  </figure>
                                  <div
-                                    class="bg-black w-36 lg:h-40 h-28 rounded-2xl shadow-6xl absolute xl:left-48 bottom-0 card-wrapper-left left-12"
+                                    class="bg-black w-40 lg:h-40 h-28 rounded-2xl shadow-6xl absolute xl:left-48 bottom-0 card-wrapper-left left-12"
                                     >
                                     <figure
                                        class="w-7 h-7 rounded-full overflow-hidden -left-3 top-2.5 absolute shadow-9xl"
@@ -879,7 +896,7 @@
                               >
                               <div class="relative md:max-w-2xl mx-auto lg:max-w-full">
                                  <div
-                                    class="bg-black w-36 lg:h-40 h-28 rounded-2xl shadow-6xl absolute xl:right-32 xl:top-1/3 card-wrapper-right right-0 md:top-8 top-4"
+                                    class="bg-black w-40 lg:h-40 h-28 rounded-2xl shadow-6xl absolute xl:right-32 xl:top-1/3 card-wrapper-right right-0 md:top-8 top-4"
                                     >
                                     <figure
                                        class="w-7 h-7 rounded-full overflow-hidden -left-3 top-2.5 absolute shadow-9xl"
@@ -908,14 +925,14 @@
                                           >
                                     </div>
                                  </div>
-                                 <figure class="max-w-md mx-auto">
+                                 <figure class="max-w-md mx-auto slider-img ">
                                     <img
                                        class="embla__slide__img"
-                                       src="./images/slider-image.png"
+                                       src="./images/lunch-box-campagin1.png"
                                        />
                                  </figure>
                                  <div
-                                    class="bg-black w-36 lg:h-40 h-28 rounded-2xl shadow-6xl absolute xl:left-32 top-1/2 card-wrapper-left left-4"
+                                    class="bg-black w-40 lg:h-40 h-28 rounded-2xl shadow-6xl absolute xl:left-32 top-1/2 card-wrapper-left left-4"
                                     >
                                     <figure
                                        class="w-7 h-7 rounded-full overflow-hidden -left-3 top-2.5 absolute shadow-9xl"
@@ -1918,7 +1935,7 @@
                   <div class="embla__viewport  md:pt-14 pt-10">
                      <div class="embla__container flex flex-row -mx-2">
                         <div
-                           class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 "
+                           class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 transition ease-in duration-300  hover:bg-orange-50 cursor-pointer"
                            >
                            <figure
                               class="w-full h-28 flex items-center justify-center mb-8"
@@ -1952,7 +1969,7 @@
                            </button>
                         </div>
                         <div
-                           class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 "
+                           class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 transition ease-in duration-300  hover:bg-orange-50 cursor-pointer"
                            >
                            <figure
                               class="w-full h-28 flex items-center justify-center mb-8"
@@ -1984,7 +2001,7 @@
                            </button>
                         </div>
                         <div
-                           class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 "
+                           class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 transition ease-in duration-300  hover:bg-orange-50 cursor-pointer"
                            >
                            <figure
                               class="w-full h-28 flex items-center justify-center mb-8"
@@ -2016,7 +2033,7 @@
                            </button>
                         </div>
                         <div
-                           class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 "
+                           class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 transition ease-in duration-300  hover:bg-orange-50 cursor-pointer"
                            >
                            <figure
                               class="w-full h-28 flex items-center justify-center mb-8"
@@ -2048,7 +2065,7 @@
                            </button>
                         </div>
                         <div
-                        class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 "
+                        class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 transition ease-in duration-300  hover:bg-orange-50 cursor-pointer"
                         >
                         <figure
                            class="w-full h-28 flex items-center justify-center mb-8"
@@ -2082,7 +2099,7 @@
                         </button>
                      </div>
                      <div
-                        class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 "
+                        class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 transition ease-in duration-300  hover:bg-orange-50 cursor-pointer"
                         >
                         <figure
                            class="w-full h-28 flex items-center justify-center mb-8"
@@ -2114,7 +2131,7 @@
                         </button>
                      </div>
                      <div
-                        class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 "
+                        class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 transition ease-in duration-300  hover:bg-orange-50 cursor-pointer"
                         >
                         <figure
                            class="w-full h-28 flex items-center justify-center mb-8"
@@ -2146,7 +2163,7 @@
                         </button>
                      </div>
                      <div
-                        class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 "
+                        class="embla__slide bg-white md:px-10 md:py-8 md:min-w-xsm md:max-w-xsm w-full rounded-3xxl shadow-3xxl mx-2 min-w-90 max-w-90 p-6 transition ease-in duration-300  hover:bg-orange-50 cursor-pointer"
                         >
                         <figure
                            class="w-full h-28 flex items-center justify-center mb-8"
@@ -2519,9 +2536,9 @@
                </div>
             </div>
          </section>
-         <section class="section-start-exploring bg-blue-gradient bg-no-repeat bg-cover pb-28 md:pb-0 relative">
+         <section class="section-start-exploring bg-blue-gradient bg-no-repeat bg-cover pb-28 md:pb-0 relative overflow-hidden sm:overflow-visible">
             <div class="md:max-w-6xxl mx-auto xl:px-4 flex-col-reverse flex flex-wrap justify-between  px-6 lg:flex-nowrap lg:flex-row ">
-               <div class="w-full md:max-w-xxs md:pt-0 lg:pt-36 lg:pb-52">
+               <div class="w-full lg:max-w-xxs md:pt-0 md:pb-44 lg:pt-36 lg:pb-52">
                   <h2
                      class="text-white font-articulat xl:text-3xxl font-semibold leading-none tracking-tight text-2xxl"
                      >
@@ -2562,7 +2579,7 @@
                         >
                   </div>
                </div>
-               <div class="lg:w-3/4 w-full xl:pl-20 flex relative text-center">
+               <div class="lg:w-3/4 w-full xl:pl-20 flex relative text-center image-group">
                   <div class="image-gallery flex -translate-x-48 transform translate-x-0 items-center w-full">
                      <div class="creators-group-gallery-first">
                         <div
@@ -2776,7 +2793,7 @@
                   </div>
                   <a
                      href="#"
-                     class="inline-flex p-5 rounded-full bg-yellow-bg shadow-yello-shadow font-semibold z-40 h-fit absolute text-white font-articulat xl:text-xl leading-none tracking-tight items-center top-1/2 left-1/2 btn-start-exploring"
+                     class="inline-flex p-5 rounded-full bg-yellow-bg shadow-yello-shadow font-semibold z-40 h-fit absolute text-white font-articulat xl:text-xl leading-none tracking-tight items-center top-1/2 left-1/2 btn-start-exploring w-max"
                      >
                      Start exploring
                      <figure class="ml-3 w-3.5 h-3.5">
@@ -3066,6 +3083,9 @@
                </div>
             </div>
          </footer>
+         <section>
+            
+         </section>
       </main>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
       <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
@@ -3074,3 +3094,6 @@
       <script src="js/main.js"></script>
    </body>
 </html>
+
+
+
